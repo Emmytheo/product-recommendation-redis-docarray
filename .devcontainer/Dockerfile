@@ -9,14 +9,6 @@ RUN apt-get update && apt-get install -y \
 # Install utilities
 RUN apt-get install -y curl jq wget git
 
-# Set environment variables
-ENV PIP_NO_CACHE_DIR=yes \
-    PYTHONUNBUFFERED=1 \
-    PYTHONDONTWRITEBYTECODE=1
 
 # Install the required python packages globally
 ENV PATH="$PATH:/root/.local/bin"
-COPY requirements.txt .
-
-# Declare working directory
-WORKDIR /
