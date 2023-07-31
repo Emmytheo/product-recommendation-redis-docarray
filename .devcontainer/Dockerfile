@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get install -y curl jq wget git
 
 
-Install the required python packages globally
-ENV PATH="$PATH:/root/.local/bin"
+# Install the required python packages globally
+# ENV PATH="$PATH:/root/.local/bin"
 
 WORKDIR /
-COPY . .
+# COPY . .
