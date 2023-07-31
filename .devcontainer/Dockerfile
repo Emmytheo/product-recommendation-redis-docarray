@@ -12,3 +12,6 @@ RUN apt-get install -y curl jq wget git
 
 # Install the required python packages globally
 ENV PATH="$PATH:/root/.local/bin"
+
+WORKDIR /
+COPY . .
