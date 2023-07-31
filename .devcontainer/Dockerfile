@@ -11,7 +11,7 @@ FROM python:3.10
 
 
 #Install the required python packages globally
-ENV PATH="$PATH:/root/.local/bin"
+# ENV PATH="$PATH:/root/.local/bin"
 
-WORKDIR /
-COPY . .
+# WORKDIR /
+# COPY . .
