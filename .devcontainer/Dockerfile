@@ -9,9 +9,13 @@ RUN apt-get update && apt-get install -y \
 # Install utilities
 RUN apt-get install -y curl jq wget git
 
+# Declare working directory
+# WORKDIR /
+
+
 
 # Install the required python packages globally
 # ENV PATH="$PATH:/root/.local/bin"
 
-WORKDIR /
+# WORKDIR /
 # COPY . .
